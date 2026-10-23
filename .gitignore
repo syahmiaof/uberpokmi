@@ -1,0 +1,10 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.log
+.vercel/
+*.tsbuildinfo
+.impeccable/review/
+asset-research/*.jpg
+asset-research/*candidates.json

@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-23T04:53:49.743Z",
+  "title": "Design System: UberPokmi",
+  "extensions": {
+    "colorMeta": {
+      "night": {
+        "role": "neutral",
+        "displayName": "Night",
+        "canonical": "#101412",
+        "tonalRamp": [
+          "#222B26",
+          "#3B4A42",
+          "#54695E",
+          "#6D887A",
+          "#8BA296",
+          "#AABBB3",
+          "#CCD6D1",
+          "#EEF1F0"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "canonical": "#19201C",
+        "tonalRamp": [
+          "#222B26",
+          "#3A4A41",
+          "#536A5D",
+          "#6B8978",
+          "#8AA395",
+          "#A9BCB1",
+          "#CBD7D0",
+          "#EEF2EF"
+        ]
+      },
+      "raised": {
+        "role": "neutral",
+        "displayName": "Raised",
+        "canonical": "#222B25",
+        "tonalRamp": [
+          "#222B25",
+          "#3B4A40",
+          "#53695B",
+          "#6C8976",
+          "#8AA392",
+          "#AABBB0",
+          "#CCD6CF",
+          "#EEF1EF"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Primary Text",
+        "canonical": "#F5F7F2",
+        "tonalRamp": [
+          "#282F1D",
+          "#455233",
+          "#637548",
+          "#80985D",
+          "#9BAF7E",
+          "#B6C5A0",
+          "#D3DCC6",
+          "#F0F3EC"
+        ]
+      },
+      "secondary-text": {
+        "role": "neutral",
+        "displayName": "Secondary Text",
+        "canonical": "#A8B3AB",
+        "tonalRamp": [
+          "#242925",
+          "#3E4740",
+          "#58655B",
+          "#728377",
+          "#8F9E93",
+          "#ADB8B0",
+          "#CED4D0",
+          "#EFF1EF"
+        ]
+      },
+      "muted-text": {
+        "role": "neutral",
+        "displayName": "Muted Text",
+        "canonical": "#9AA69D",
+        "tonalRamp": [
+          "#242925",
+          "#3E4640",
+          "#58645B",
+          "#738277",
+          "#909D93",
+          "#AEB7B0",
+          "#CED4D0",
+          "#EFF1EF"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Border",
+        "canonical": "#333E36",
+        "tonalRamp": [
+          "#232A25",
+          "#3C493F",
+          "#55685A",
+          "#6E8675",
+          "#8CA192",
+          "#ABBAAF",
+          "#CDD6CF",
+          "#EEF1EF"
+        ]
+      },
+      "velocity-lime": {
+        "role": "primary",
+        "displayName": "Velocity Lime",
+        "canonical": "#C8FF3D",
+        "tonalRamp": [
+          "#344706",
+          "#5B7B0A",
+          "#81AF0E",
+          "#A7E212",
+          "#BDEF3E",
+          "#CFF471",
+          "#E2F8AA",
+          "#F5FDE3"
+        ]
+      },
+      "offer-orange": {
+        "role": "secondary",
+        "displayName": "Offer Orange",
+        "canonical": "#FF7448",
+        "tonalRamp": [
+          "#471506",
+          "#7B250A",
+          "#AF350E",
+          "#E24412",
+          "#EF683E",
+          "#F49171",
+          "#F8BDAA",
+          "#FDE9E3"
+        ]
+      },
+      "success": {
+        "role": "tertiary",
+        "displayName": "Success",
+        "canonical": "#64D99B",
+        "tonalRamp": [
+          "#0F3D25",
+          "#1A6A40",
+          "#25985B",
+          "#30C576",
+          "#57D693",
+          "#84E1B0",
+          "#B5EDCF",
+          "#E6F9EF"
+        ]
+      },
+      "error": {
+        "role": "tertiary",
+        "displayName": "Error",
+        "canonical": "#FF8585",
+        "tonalRamp": [
+          "#470606",
+          "#7B0A0A",
+          "#AF0E0E",
+          "#E21212",
+          "#EF3E3E",
+          "#F47171",
+          "#F8AAAA",
+          "#FDE3E3"
+        ]
+      },
+      "daylight": {
+        "role": "neutral",
+        "displayName": "Daylight",
+        "canonical": "#F5F7F2",
+        "tonalRamp": [
+          "#282F1D",
+          "#455233",
+          "#637548",
+          "#80985D",
+          "#9BAF7E",
+          "#B6C5A0",
+          "#D3DCC6",
+          "#F0F3EC"
+        ]
+      },
+      "daylight-accent": {
+        "role": "primary",
+        "displayName": "Daylight Accent",
+        "canonical": "#466B00",
+        "tonalRamp": [
+          "#304706",
+          "#547B0A",
+          "#77AF0E",
+          "#9AE212",
+          "#B2EF3E",
+          "#C7F471",
+          "#DDF8AA",
+          "#F4FDE3"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Home hero only; responsive sizes are defined in CSS."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Panel and section headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Forms and operational copy."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "interaction",
+        "value": "150–200ms ease",
+        "purpose": "Short state and hover transitions; disabled under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1700px"
+      },
+      {
+        "name": "sidebar-tight",
+        "value": "1250px"
+      },
+      {
+        "name": "tablet",
+        "value": "1000px"
+      },
+      {
+        "name": "mobile",
+        "value": "767px"
+      },
+      {
+        "name": "compact-mobile",
+        "value": "380px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Leading transaction action.",
+      "html": "<button class=\"ds-primary\">Confirm booking</button>",
+      "css": ".ds-primary{background:#C8FF3D;color:#14200C;border:0;border-radius:9px;padding:15px 20px;min-height:46px;font:700 13px Inter,sans-serif;cursor:pointer;transition:background .15s,transform .15s}.ds-primary:hover{background:#D5FF71;transform:translateY(-1px)}.ds-primary:focus-visible{outline:2px solid #C8FF3D;outline-offset:4px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Reversible or supporting action.",
+      "html": "<button class=\"ds-secondary\">Go back</button>",
+      "css": ".ds-secondary{background:transparent;color:#F5F7F2;border:1px solid #333E36;border-radius:9px;padding:15px 20px;min-height:46px;font:700 13px Inter,sans-serif;cursor:pointer}.ds-secondary:hover{background:#222B25}.ds-secondary:focus-visible{outline:2px solid #C8FF3D;outline-offset:4px}"
+    },
+    {
+      "name": "Location Input",
+      "kind": "input",
+      "description": "Place search field.",
+      "html": "<input class=\"ds-input\" placeholder=\"Search locations\" aria-label=\"Search locations\">",
+      "css": ".ds-input{background:#101412;color:#F5F7F2;border:1px solid #333E36;border-radius:9px;padding:13px 14px;width:100%;font:400 14px Inter,sans-serif}.ds-input::placeholder{color:#9AA69D}.ds-input:focus-visible{outline:2px solid #C8FF3D;outline-offset:4px}"
+    },
+    {
+      "name": "Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Tonal container for forms and totals.",
+      "html": "<section class=\"ds-panel\"><strong>Trip details</strong><p>Pickup to destination</p></section>",
+      "css": ".ds-panel{background:#19201C;color:#F5F7F2;border:1px solid #333E36;border-radius:16px;padding:24px;font:400 14px/1.65 Inter,sans-serif}.ds-panel strong{display:block;font:600 20px/1.25 \"Space Grotesk\",sans-serif}.ds-panel p{color:#A8B3AB;margin:8px 0 0}"
+    },
+    {
+      "name": "Category Chip",
+      "kind": "chip",
+      "description": "Filter selection.",
+      "html": "<button class=\"ds-chip\">Local favourites</button>",
+      "css": ".ds-chip{background:#C8FF3D;color:#18240E;border:1px solid #C8FF3D;border-radius:7px;padding:10px 17px;min-height:42px;font:600 12px Inter,sans-serif;cursor:pointer}.ds-chip:hover{filter:brightness(1.08)}.ds-chip:focus-visible{outline:2px solid #C8FF3D;outline-offset:4px}"
+    },
+    {
+      "name": "Mobile Navigation",
+      "kind": "nav",
+      "description": "Persistent four-destination mobile rail.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Mobile navigation\"><button class=\"ds-active\">Home</button><button>Activity</button><button>Offers</button><button>Account</button></nav>",
+      "css": ".ds-nav{display:flex;justify-content:space-around;background:#101412;border-top:1px solid #333E36;padding:8px 10px;gap:8px}.ds-nav button{background:none;border:0;color:#9AA69D;min-height:48px;min-width:62px;font:500 11px Inter,sans-serif;cursor:pointer}.ds-nav button:hover,.ds-nav .ds-active{color:#C8FF3D}.ds-nav button:focus-visible{outline:2px solid #C8FF3D;outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Urban Velocity",
+    "overview": "The interface behaves like a useful city tool after dark: immediate route and order decisions, legible status, and one unmistakable action per step. The bright accent marks action and progress; food photography keeps its natural colour. Desktop uses a fixed service rail while mobile shifts to a bottom navigation and a map-first booking sheet.",
+    "keyCharacteristics": [
+      "Dark tonal surfaces with lime reserved for decisive actions.",
+      "Geometric headlines paired with restrained, readable interface copy.",
+      "Realistic representative food photography and clearly fictional mobility assets.",
+      "Route, price, status, and receipt stay visible at the moment they matter."
+    ],
+    "rules": [
+      {
+        "name": "The Action Signal Rule",
+        "body": "Reserve lime for selected options, progress and primary actions; do not tint food images or fill every panel with it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Scan First Rule",
+        "body": "A user should find the next action, current price and current status without reading a paragraph.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do show a clear demo status on fictional bookings and prices.",
+      "Do preserve food photos' natural colours and their credited provenance.",
+      "Do keep keyboard focus, error text and primary actions visible in both themes."
+    ],
+    "donts": [
+      "Don't imply real dispatch, GPS tracking, merchant fulfilment or payment.",
+      "Don't add generic analytics cards to a booking task.",
+      "Don't shrink critical mobile labels simply to fit a decorative composition."
+    ]
+  }
+}
