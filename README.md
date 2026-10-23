@@ -2,6 +2,8 @@
 
 An interactive, frontend-only Malaysian mobility superapp demo. Book a fictional ride, order from a fictional restaurant, or send a fictional parcel; advance its simulated status and find the result in Activity. No backend, account login, real payment, dispatch, GPS, or live messages are connected.
 
+Production demo: **https://uberpokmi.syahmiaof.my/**. The private GitHub repository is `syahmiaof/uberpokmi`; its `main` branch is connected to the Vercel project `syahmiaofs-projects/uberpokmi`.
+
 ## Run locally
 
 Requires Node.js 20.19+ or 22.12+.
@@ -18,6 +20,7 @@ npm run build
 npm test
 npx playwright install chromium
 npm run test:e2e
+npm run smoke:prod
 ```
 
 The test suite covers booking and tracking across all three services, discounts, scheduling, cart replacement, saved addresses, reset, keyboard focus, map fallback, and responsive widths from 375px to 1920px. Tests use local state and a fresh browser context. If another service occupies port 5173, run the app on 5173 before E2E tests or update `playwright.config.ts`.
@@ -48,4 +51,6 @@ The schematic map is always available; the optional street map needs external ti
 
 Thirty-two distinct representative food photographs are bundled locally. They depict dishes, not the fictional restaurants' actual food. [Image credits](public/images/credits.html) and the machine-readable [asset registry](public/images/food-assets.json) include origin and licenses. Fictional vehicle renders and driver portrait were generated for this demo; their prompts are in [ASSETS.md](ASSETS.md).
 
-The app was implemented in this local Vite project because Google Gemini Canvas is unavailable in this workspace. It has not been deployed.
+`public/og-uberpokmi.png` is the 1200 × 630 link-preview image. Its Open Graph and Twitter tags use the production subdomain. Regenerate it with `npm run og`, then redeploy. `scripts/smoke-production.mjs` checks the live page, three service entry points, mobile navigation, browser errors, and the preview image.
+
+The app was implemented in this Vite project because Google Gemini Canvas was unavailable in this workspace. Vercel hosts the static frontend; Cloudflare provides a DNS-only A record for the subdomain.
