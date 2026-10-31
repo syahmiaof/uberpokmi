@@ -1,11 +1,11 @@
 <div align="center">
   <h1>uberpokmi</h1>
-  <p><strong>Interactive Malaysian Mobility Superapp Simulation (Ride, Food, Delivery)</strong></p>
+  <p><strong>Interactive Malaysian Mobility & Delivery Superapp Simulation</strong></p>
   <p>
     <a href="https://uberpokmi.syahmiaof.my"><img src="https://img.shields.io/badge/Demo-Live-60E1B5?style=for-the-badge&logoColor=60E1B5&labelColor=101713" alt="Demo"></a>
     <a href="https://github.com/syahmiaof/uberpokmi"><img src="https://img.shields.io/badge/Source-GitHub-60E1B5?style=for-the-badge&logo=github&logoColor=60E1B5&labelColor=101713" alt="GitHub"></a>
     <a href="https://github.com/syahmiaof/uberpokmi/actions"><img src="https://img.shields.io/badge/CI-Passing-60E1B5?style=for-the-badge&logo=githubactions&logoColor=60E1B5&labelColor=101713" alt="CI"></a>
-    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-60E1B5?style=for-the-badge&logoColor=60E1B5&labelColor=101713" alt="License"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-All_Rights_Reserved-60E1B5?style=for-the-badge&logoColor=60E1B5&labelColor=101713" alt="License"></a>
   </p>
   <p>
     <img src="https://img.shields.io/badge/React-19.2-101713?style=for-the-badge&logo=react&logoColor=60E1B5" alt="React">
@@ -18,63 +18,42 @@
 
 ---
 
-![UberPokmi social preview](public/og-uberpokmi.png)
+<div align="center">
+  <img src="public/og-uberpokmi.png" alt="UberPokmi Superapp Social Preview" width="100%">
+</div>
 
-UberPokmi is a frontend-only simulation set around Kuala Lumpur. Try a fictional ride, food order or parcel delivery, advance its status and inspect the result in Activity. It uses local demo state, not a live transport or commerce service.
+---
 
-## 🚗 What is Implemented
+## 🚗 Overview & System Simulation
 
-- **Ride:** Choose places and vehicle class, apply a demo offer, book now or schedule, then advance a fictional trip.
-- **Food:** Browse fictional restaurants, customize items, manage a single-restaurant cart and complete a demo checkout.
-- **Delivery:** Enter sender, recipient and parcel details, choose a vehicle and advance to simulated proof of delivery.
-- **Shared:** Activity, receipts, saved addresses, offers, notifications, theme, demo chat, ratings and reset.
-- Responsive desktop/mobile UI and an offline schematic map with optional OpenStreetMap tiles.
+**UberPokmi** (`uberpokmi.syahmiaof.my`) is a comprehensive frontend simulation of a Malaysian multi-service on-demand superapp (Ride, Food delivery, and Parcel courier), localized around the Klang Valley and Kuala Lumpur metropolitan region. Engineered with modern React 19 and Vite 7, it demonstrates complex interactive client state management, deterministic dynamic pricing in integer sen, and reactive geospatial rendering.
 
-Prices are calculated in integer sen. Distance is estimated from coordinates with a fixed multiplier; it is not live routing.
+### Key Value Pillars:
+- **Functionality**: Unified three-tier service workflow featuring Ride hailing (vehicle tiering, dynamic fare calculation, multi-stage ride progression), Food ordering (restaurant menus, customized modifier carts, single-vendor checkout), and Courier delivery (sender/recipient coordinates, vehicle parcel matching, proof-of-delivery tracking).
+- **Aesthetic Excellence**: High-density mobile-first design with dark mode ergonomics, fluid layout transitions, interactive Leaflet street maps, and tactile tactile micro-feedback.
+- **Business Impact**: Serves as an advanced architecture showcase demonstrating how high-complexity mobile application state machines and offline-first workflows can run smoothly in pure client-side web runtimes.
 
-## 🛠️ Run and Verify
+---
 
-Node.js 20.19+ or 22.12+ is required.
+## 🏗️ Architecture & Core Components
 
-```bash
-# Install dependencies
-npm ci
+- `src/domain.ts` — Type-safe domain schemas, integer sen pricing math, and geospatial coordinate validations.
+- `src/data.ts` — Structured Malaysian locations, simulated culinary vendors, and detailed regional menus.
+- `src/store.tsx` — Central reactive state container handling lifecycle states for trips, orders, and courier dispatch.
+- `src/MapExperience.tsx` — Adaptive dual-mode mapping engine supporting schematic vectors and OpenStreetMap tiles.
+- `src/BookingForms.tsx` & `src/Tracking.tsx` — Service configuration flows and real-time order lifecycle tracking views.
 
-# Run development server
-npm run dev
+---
 
-# Run linters and typecheck
-npm run lint
-npm run typecheck
+## 🚀 Live Production & Infrastructure
 
-# Run automated tests
-npm test
-npm run build
-```
+- **Live Production URL**: [https://uberpokmi.syahmiaof.my](https://uberpokmi.syahmiaof.my)
+- **Deployment Platform**: Vercel Global Edge Network on `main` branch
+- **Continuous Validation**: Automated GitHub Actions CI workflow executing strict TypeScript type checks, ESLint analysis, and Vitest test suites.
 
-Optional browser E2E and production smoke checks:
-```bash
-npx playwright install chromium
-npm run test:e2e
-npm run smoke:prod
-```
+---
 
-## 📁 Project Structure
+## 📄 License & Intellectual Property
 
-- `src/domain.ts` — types, pricing and validation.
-- `src/data.ts` — fictional places, restaurants and menus.
-- `src/store.tsx` — shared local state and status transitions.
-- `src/BookingForms.tsx`, `src/Food.tsx`, `src/Tracking.tsx` — service flows.
-- `src/MapExperience.tsx` — schematic and optional street map.
-- `tests/` and `scripts/` — browser checks and production smoke script.
-
-## 📜 Assets and Limits
-
-Food photographs represent dishes, not actual fictional restaurants. See [image credits](public/images/credits.html), [asset registry](public/images/food-assets.json) and [ASSETS.md](ASSETS.md). The app has no real payment, dispatch, GPS, login, messaging or delivery network. Browser local storage holds demo state under `uberpokmi-demo-v1`; avoid entering real private contact details.
-
-The main branch is configured for Vercel deployment at [https://uberpokmi.syahmiaof.my/](https://uberpokmi.syahmiaof.my/).
-
-## 📄 License
-
-This project is open-sourced under the [MIT License](LICENSE).  
-Copyright © 2026 Muhammad Syahmi (syahmiaof).
+Proprietary Software. Copyright &copy; 2026 Muhammad Syahmi (`syahmiaof`). All rights reserved.  
+Created solely for demonstration and portfolio showcase purposes. See [LICENSE](LICENSE) for details.
